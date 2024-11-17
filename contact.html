@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+"
+      rel="stylesheet"
+    />
+    <script>
+      function displayNav() {
+        if (document.getElementById("nav").classList.contains("hidden")) {
+          document.getElementById("nav").classList.remove("hidden");
+        } else {
+          document.getElementById("nav").classList.add("hidden");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!--Header-->
+
+    <section class="bg-green-200 grid shadow-xl sticky top-0 w-full">
+      <div class="flex items-center justify-between w-full p-5">
+        <div>
+          <h1 class="font-bold text-3xl">GREENDEN</h1>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 md:hidden"
+          onclick="displayNav()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+
+        <div class="flex gap-5 hidden md:flex">
+          <a href="index.html"
+            ><p class="hover:underline hover:cursor-pointer">Home</p></a
+          >
+          <a href="Products.html"
+            ><p class="hover:underline hover:cursor-pointer">Products</p></a
+          >
+          <p class="font-bold">Contact</p>
+        </div>
+      </div>
+
+      <div
+        id="nav"
+        class="hidden flex items-center justify-around h-12 w-full font-bold text-xl bg-green-100 md:hidden"
+      >
+        <a href="index.html"
+          ><p class="hover:underline hover:cursor-pointer">Home</p></a
+        >
+        <a href="Products.html"
+          ><p class="hover:underline hover:cursor-pointer">Products</p></a
+        >
+      </div>
+    </section>
+
+    <!--Contact Form-->
+
+    <section class="bg-white grid justify-center">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md grid gap-5">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 mt-5 font-bold"
+        >
+          Contact Us
+        </h2>
+        <p
+          class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl"
+        >
+          Got a technical issue? Want to send feedback about a beta feature?
+          Need details about our Business plan? Let us know.
+        </p>
+        <form action="#" class="space-y-8">
+          <div class="grid gap-5">
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Your email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="shadow-sm h-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-5"
+              placeholder="name@flowbite.com"
+              required
+            />
+          </div>
+          <div class="grid gap-5">
+            <label
+              for="subject"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              class="block p-5 h-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+              placeholder="Let us know how we can help you"
+              required
+            />
+          </div>
+          <div class="sm:col-span-2 mt-5">
+            <label for="message" class="block text-sm font-medium text-gray-900"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="block mt-5 p-5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+              placeholder="Leave a comment..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="border border-green-900 shadow-md p-2 rounded-xl bg-green-200"
+          >
+            Send message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <section class="bg-green-100 p-10 mt-10">
+      <h1 class="font-bold text-3xl">Greenden</h1>
+      <p>
+        The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+        below for those interest
+      </p>
+      <p>@2024 Greenday.com</p>
+    </section>
+  </body>
+</html>

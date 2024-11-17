@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+"
+      rel="stylesheet"
+    />
+    <script>
+      function displayNav() {
+        if (document.getElementById("nav").classList.contains("hidden")) {
+          document.getElementById("nav").classList.remove("hidden");
+        } else {
+          document.getElementById("nav").classList.add("hidden");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!--Header Section-->
+
+    <section class="grid items-center bg-green-200 shadow-xl sticky top-0 z-10">
+      <div class="flex items-center justify-between w-full p-5">
+        <div>
+          <h1 class="text-3xl font-bold">GREENDEN</h1>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 md:hidden"
+          onclick="displayNav()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+
+        <div class="flex gap-5 hidden md:flex">
+          <a href="index.html"
+            ><p class="hover:underline hover:cursor-pointer">Home</p></a
+          >
+          <p class="font-bold">Products</p>
+          <a href="contact.html"
+            ><p class="hover:underline hover:cursor-pointer">Contact</p></a
+          >
+        </div>
+      </div>
+
+      <div
+        id="nav"
+        class="hidden flex items-center justify-around h-12 w-full font-bold text-xl bg-green-100 md:hidden"
+      >
+        <a href="index.html"
+          ><p class="hover:underline hover:cursor-pointer">Home</p></a
+        >
+        <a href="contact.html"
+          ><p class="hover:underline hover:cursor-pointer">Contact</p></a
+        >
+      </div>
+    </section>
+
+    <!--Search Bar-->
+
+    <section>
+      <div class="grid items-center justify-center w-full">
+        <h1
+          class="font-bold items-center justify-center text-center mt-5 text-2xl"
+        >
+          Our Products
+        </h1>
+        <input
+          class="border border-black mx-10 lg:w-[900px] h-10 mt-5 rounded-md p-5"
+          type="text"
+          placeholder="Search here..."
+        />
+      </div>
+    </section>
+
+    <!--Image Section-->
+
+    <section class="mt-5">
+      <div class="grid items-center justify-center sm:flex flex-wrap">
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plant-1.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plant-2.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plant-3.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plant-4.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+      </div>
+
+      <div class="grid items-center justify-center sm:flex flex-wrap mt-5">
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plant-5.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plant-6.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plant-7.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+
+        <div class="">
+          <img
+            class="border border-2 border-black w-60 h-60 m-5 opacity-100 transition duration-200 hover:opacity-90 hover:shadow-2xl"
+            src="./Plant_images/plants.8.jpg"
+            alt=""
+          />
+          <p class="text-center">Rose Plant</p>
+          <p class="text-center">$20</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Section-->
+
+    <section class="bg-green-100 p-10 mt-10">
+      <h1 class="font-bold text-3xl">Greenden</h1>
+      <p>
+        The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+        below for those interest
+      </p>
+      <p>@2024 Greenday.com</p>
+    </section>
+  </body>
+</html>
